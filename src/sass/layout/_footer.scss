@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #757d85;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-grey-dark-2;
+    top: 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    li {
+      padding: 1rem 2rem;
+      border-right: 2px solid $border-color;
+    }
+    &-nav__link {
+      font-weight: bold;
+      color: inherit;
+    }
+  }
+  p {
+    font-weight: bold;
+  }
+}

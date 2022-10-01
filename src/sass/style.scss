@@ -1,0 +1,38 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/screen";
+@import "layout/footer";
+
+@import "components/sideNav";
+@import "components/card";
+@import "components/buttons";
+
+@import "pages/home";
+@import "pages/about";
+
+.hide {
+  display: inline-block;
+  transform: rotate(0deg) !important;
+  transition: all 0.3s;
+}
+.show {
+  .fa-chevron-right {
+    display: inline-block;
+    transform: rotate(90deg) !important;
+    transition: all 0.3s;
+    & ~ .sideNav__nav-item__nav {
+      opacity: 1;
+      height: 100%;
+      transform: translateY(0rem);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $color-primary-dark;
+  font-size: 62.5%;
+  padding: 5vh 4rem;
+}
+body {
+  font-family: "Fira Code", monospace;
+  background-color: $color-primary-light;
+  color: $color-white;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  position: relative;
+}

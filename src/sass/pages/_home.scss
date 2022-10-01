@@ -1,0 +1,24 @@
+.hello__screen {
+  overflow: hidden;
+  &--text {
+    h3 {
+      color: #8791de;
+    }
+  }
+  &--slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 400px;
+    position: relative;
+    .card__body {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.sideNav {
+  padding: 1rem 2rem;
+  position: absolute;
+  background-color: $color-primary-dark;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-top: 2px solid $border-color;
+  border-right: 2px solid $border-color;
+  border-left: 2px solid $border-color;
+  color: #66717c;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  &__nav {
+    &-item {
+      cursor: pointer;
+      i {
+        display: inline-block;
+        transition: all 0.3s;
+      }
+      &--1 {
+        color: $color-red-1;
+      }
+      &--2 {
+        color: $color-green-1;
+      }
+      &--3 {
+        color: $color-yellow-1;
+      }
+
+      &__nav {
+        opacity: 0;
+        transform: translateY(-2rem);
+        height: 0px;
+        margin-left: 4rem;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

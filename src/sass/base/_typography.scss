@@ -1,0 +1,18 @@
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  &--main {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+  &--sub {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+}
+
+.paragraph {
+  color: $color-white;
+  font-size: 1.7rem;
+  font-weight: 400;
+}

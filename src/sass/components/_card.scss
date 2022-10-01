@@ -1,0 +1,47 @@
+.card {
+  &__body {
+    border-radius: 6px;
+    border: 1px solid $border-color;
+    padding: 2rem 2rem;
+
+    &--heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      h5 {
+        color: $color-yellow-1;
+      }
+      p {
+        color: $color-grey-dark-1;
+      }
+    }
+    &--main {
+      background-color: $color-primary-dark;
+      border-radius: 6px;
+      border: 1px solid $border-color;
+      padding: 2rem 0rem;
+
+      &-content {
+        padding: 2rem;
+      }
+      &-footer {
+        margin-bottom: 2rem;
+        background-color: $color-yellow-1;
+        color: $color-black;
+        a {
+          color: inherit;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  &__description {
+    padding: 3rem 0rem;
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

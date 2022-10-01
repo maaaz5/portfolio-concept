@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// [class^="col-"] {
+//   // flex-basis: 100%;
+
+//   // &:not(:last-child) {
+//   //   gap: $gutter-vertical $gutter-horizontal;
+//   // }
+// }
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 (100% / ($columns / $i));
+  }
+  .col-offset-#{$i} {
+    margin-left: (100% / ($columns / $i));
+  }
+}
