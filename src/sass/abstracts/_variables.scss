@@ -1,15 +1,19 @@
 //colors
-$color-primary-dark: #010409;
-$color-primary-light: #0d1117;
+// $color-primary-dark: #010409;
+$color-primary-dark: #212529;
+$color-primary-light: #343a40;
+
+// $color-primary-light: #0d1117;
 
 $color-grey-dark-1: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
 //icons-colors
-$color-red-1: #bf616a;
-$color-green-1: #a3be8c;
-$color-yellow-1: #bc9544;
+$color-red-1: #ff8787;
+$color-green-1: #69db7c;
+$color-yellow-1: #ffd43b;
+$color-yellow-2: #fcc419;
 
 $color-white: #fff;
 $color-black: #000;
@@ -17,7 +21,8 @@ $color-black: #000;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$border-color: #757d85;
+$border-color: #adb5bd;
+// $border-color: #757d85;
 
 //layout
 $columns: 12;
@@ -27,3 +32,6 @@ $gutter-horizontal: 4rem;
 
 //fonts
 $default-font-size: 1.6rem;
+
+//radius
+$border-radius: 8px;

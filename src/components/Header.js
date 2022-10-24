@@ -9,7 +9,7 @@ const Header = () => {
             to={"/"}
             className={({ isActive }) =>
               isActive
-                ? "header__main-nav__link header__main-nav__link-active"
+                ? "header__main-nav__link  header__main-nav__link-active"
                 : "header__main-nav__link"
             }
           >

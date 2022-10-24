@@ -1,13 +1,26 @@
 .about {
   width: 100%;
+  @media screen and (max-width: 1165px) {
+    padding-top: 200px;
+  }
+
+  &__col {
+    @media screen and (max-width: 1165px) {
+      flex: 0 0 80% !important;
+    }
+  }
   &__numbers {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 2rem 0rem;
     position: relative;
     color: #66717c;
     margin-right: 6rem;
+    width: fit-content;
+    @media screen and (max-width: 1165px) {
+      display: none;
+    }
 
     &::after {
       content: "";
@@ -16,8 +29,8 @@
       right: 0px;
       margin-right: -20px;
       top: 0;
-      width: 3px;
-      background-color: #66717c;
+      width: 2px;
+      background-color: $border-color;
     }
     &--number {
       margin: 2px 0px;
@@ -29,6 +42,8 @@
     &--description {
       margin: 2px 2rem;
       position: relative;
+      font-size: 1.8rem;
+      line-height: 1.6;
 
       &::after {
         content: "";

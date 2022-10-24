@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Footer = () => {
+  let datee = new Date();
+  const [date, setDate] = useState(datee);
+
+  function time() {
+    setTimeout(() => {
+      setDate(datee);
+    }, 1000);
+  }
+
+  useEffect(() => {
+    return time();
+  }, [time]);
+
   return (
     <footer className="footer">
       <ul className="footer__nav">
@@ -11,21 +24,23 @@ const Footer = () => {
         </li>
         <li>
           <a href="#" className="footer__nav-nav__link">
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
         </li>
         <li>
           <a href="#" className="footer__nav-nav__link">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </a>
         </li>
         <li>
           <a href="#" className="footer__nav-nav__link">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </li>
       </ul>
-      <p>15:56</p>
+      <p style={{ marginRight: "12px" }} className="time">
+        {date.toLocaleTimeString()}
+      </p>
     </footer>
   );
 };

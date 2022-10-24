@@ -1,13 +1,13 @@
 .heading-primary {
   color: $color-white;
-  text-transform: uppercase;
   &--main {
     font-size: 6rem;
-    font-weight: 300;
+    font-weight: 500;
   }
   &--sub {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 4.4rem;
+    letter-spacing: -2px;
   }
 }
 

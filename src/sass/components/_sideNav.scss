@@ -10,14 +10,30 @@
   border-right: 2px solid $border-color;
   border-left: 2px solid $border-color;
   color: #66717c;
+  z-index: 100;
+  transition: all 0.3s;
+  @media screen and (max-width: 1165px) {
+    left: 0;
+    height: 150px;
+    width: 100%;
+    top: 80px;
+    height: fit-content;
+    border: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    top: 140px;
+  }
 
   &__heading {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
   }
 
   &__nav {
     &-item {
+      font-size: 1.8rem;
       cursor: pointer;
       i {
         display: inline-block;

@@ -3,6 +3,25 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  @media only screen and (max-width: 1300px) {
+    padding: 0 2rem;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      * {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.row-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 // [class^="col-"] {
