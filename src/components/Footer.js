@@ -11,8 +11,8 @@ const Footer = () => {
   }
 
   useEffect(() => {
-    return time();
-  }, [time]);
+    time();
+  }, [datee]);
 
   return (
     <footer className="footer">
