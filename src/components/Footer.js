@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const Footer = () => {
-  let datee = new Date();
-  const [date, setDate] = useState(datee);
+  const [date, setDate] = useState(new Date());
 
   useEffect(() => {
     setTimeout(() => {
-      setDate(datee);
+      setDate(new Date());
     }, 1000);
-
-    return () => {
-      setDate(datee);
-    };
   }, [date]);
 
   // setInterval(() => {
