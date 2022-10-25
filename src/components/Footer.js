@@ -4,15 +4,13 @@ const Footer = () => {
   let datee = new Date();
   const [date, setDate] = useState(datee);
 
-  function time() {
-    setTimeout(() => {
-      setDate(datee);
-    }, 1000);
-  }
+  // setTimeout(() => {
 
-  useEffect(() => {
-    time();
-  }, [datee]);
+  // }, 1000);
+
+  setInterval(() => {
+    setDate(datee);
+  }, 1000);
 
   return (
     <footer className="footer">
